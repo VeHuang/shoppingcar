@@ -1,0 +1,66 @@
+
+.ddsubmenustyle, .ddsubmenustyle div {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: white none repeat scroll 0 0;
+    border-color: black;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    font: 13px Verdana;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+.ddsubmenustyle ul {
+    border: 0 none;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.ddsubmenustyle li a {
+    background-color: lightyellow;
+    border-bottom: 1px solid black;
+    color: black;
+    display: block;
+    padding: 4px 5px;
+    text-decoration: none;
+    width: 170px;
+}
+* html .ddsubmenustyle li {
+    display: inline-block;
+    width: 170px;
+}
+.ddsubmenustyle li a:hover {
+    background-color: black;
+    color: white;
+}
+.downarrowpointer {
+    border: 0 none;
+    padding-left: 4px;
+}
+.rightarrowpointer {
+    border: 0 none;
+    left: 100px;
+    padding-top: 3px;
+    position: absolute;
+}
+.ddiframeshim {
+    background: transparent none repeat scroll 0 0;
+    border-width: 0;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 500;
+}

@@ -1,0 +1,49 @@
+@media (min-width: 576px) and (max-width: 767px){
+    .col-sm-2{
+        flex: auto;
+        max-width: 100%;
+    }
+    .col-sm-5{
+        flex: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+      width:100%;
+    }
+    .header {
+        height: auto;
+        padding: 15px 0px;
+    }
+    .header .logo{
+        text-align:center;
+        padding-bottom:10px;
+    }
+    .kart-links{
+       margin-top: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+  .productlist {
+    text-align: center;
+  }
+  .navi {
+    display: none; 
+  }
+  .navis{
+		width:60%;
+		margin: 18px auto;
+	}
+	.navis select { 
+        display: inline-block; 
+		width:100%;
+   }
+
+   .tp-banner-container{
+       max-height: 188px;
+       height: 188px;
+   }
+}
