@@ -7,7 +7,7 @@ export default class Product extends Component {
              <div className="blocky">
                 <div className="shop-items">
                     <div className="container">
-                        <ProductList />
+                        <ProductList addCart = {this.props.addCart} />
                     </div>
                 </div>
             </div>

@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import * as rs from 'reactstrap'
 import { Route, Link} from 'react-router-dom'
+import CartButton from './cartButton'
 
 class MenuItem extends Component {
-
-    constructor (props) {
-        super(props)        
-    }
-
     goto = (history,e) => {
         history.push(e.target.value) 
     }
@@ -38,7 +34,13 @@ class MenuItem extends Component {
 }
 
 export default class NavBar extends Component {
+    logout = () => {
+        localStorage.removeItem('user');
+        localStorage.removeItem('shoppingItems');
+    }
+
     render() {
+        let user = localStorage.getItem('user')
         return (
             <rs.Container>
                 <rs.Row>
@@ -54,9 +56,11 @@ export default class NavBar extends Component {
                     </div>
                     <div className="col-xs-12 col-sm-5">
                         <div className="kart-links">
-							<Link to={'/login'}>Login</Link>
-							<a href="register.html">Signup</a>
-							<a data-toggle="modal" href="#shoppingcart"><i className="fa fa-shopping-cart"></i> 3 Items - $300</a>
+                            { user ? <Link onClick={this.logout} to={'/login'}>Logout</Link>:
+							    <Link to={'/login'}>Login</Link>
+                            }
+                            <Link to='/register'>Signup</Link>
+                            <CartButton items={this.props.shoppingItems} />                     
 						</div>
                     </div>
                 </rs.Row>

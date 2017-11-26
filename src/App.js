@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import {Route, Link, Switch} from 'react-router-dom'
-import LoginForm from './components/LoginForm'
 import Layout from './components/Layout'
 import 'font-awesome/css/font-awesome.min.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import $ from 'jquery'
+window.jQuery = $;
+window.$ = $;
+global.jQuery = $;
+require('bootstrap/dist/js/bootstrap.min.js');
 require("./assets/css/ddlevelsmenu-base.css")
 require("./assets/css/ddlevelsmenu-topbar.css")
 require("./assets/css/style.css")

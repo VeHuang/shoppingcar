@@ -267,7 +267,7 @@ strong{
 
 .kart-links a{
    font-size:13px;
-   color:#fff;
+   color:#fff !important;
    font-weight:bold;
    margin:0px 2px;
    display:inline-block;
@@ -531,3 +531,35 @@ footer .copy{
 .btn-sm{
     font-size: 12px !important
 }
+
+/* Shopping Cart Modal */
+.modal-header{
+    display: inline;
+}
+
+.modal-body{
+    padding-top: 0;
+}
+
+.modal-body .table th{
+    border-top: none;
+    padding: 6px;
+}
+
+.modal-body .table td{
+    padding: 6px;
+}
+
+.modal-body .table tbody tr td input{
+    line-height: 0;
+    text-align: center;
+}
+
+button .close{
+    cursor:pointer;
+}
+
+.close{
+    opacity: .2;
+}
+
